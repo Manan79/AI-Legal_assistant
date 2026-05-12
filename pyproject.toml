@@ -1,0 +1,33 @@
+[project]
+name = "ai-legal-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.13.2",
+    "fastapi>=0.136.1",
+    "ipykernel>=7.2.0",
+    "langchain>=1.2.15",
+    "langchain-astradb>=1.0.0",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.26",
+    "langchain-groq>=1.1.2",
+    "langchain-huggingface>=1.2.1",
+    "langchain-openai>=1.1.12",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.1.6",
+    "numpy>=2.4.4",
+    "pandas>=3.0.2",
+    "pydantic>=2.12.5",
+    "pymupdf>=1.27.2.2",
+    "pypdf>=6.9.2",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.3.0",
+    "tiktoken>=0.12.0",
+    "typing>=3.10.0.0",
+    "typing-extensions>=4.15.0",
+    "uvicorn>=0.46.0",
+    "wikipedia>=1.4.0",
+]
