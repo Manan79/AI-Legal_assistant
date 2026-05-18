@@ -1,0 +1,89 @@
+<h3>Answer</h3>
+<p><strong>RENTAL AGREEMENT</strong></p>
+<p>This Rental Agreement (hereinafter referred to as "Agreement") is made and entered into on this [DAY] day of [MONTH], [YEAR], at [PLACE OF EXECUTION].</p>
+<p><strong>BETWEEN:</strong></p>
+<ol>
+<li><strong>[NAME OF LANDLORD]</strong>, son/daughter/wife of [FATHER'S/HUSBAND'S NAME OF LANDLORD], aged about [AGE] years, residing at [ADDRESS OF LANDLORD], hereinafter referred to as the "<strong>Lessor</strong>" (which expression shall unless repugnant to the context or meaning thereof, include his/her heirs, executors, administrators, legal representatives and assigns) of the <strong>FIRST PART</strong>;</li>
+</ol>
+<p><strong>AND</strong></p>
+<ol>
+<li><strong>[NAME OF TENANT]</strong>, son/daughter/wife of [FATHER'S/HUSBAND'S NAME OF TENANT], aged about [AGE] years, residing at [ADDRESS OF TENANT], hereinafter referred to as the "<strong>Lessee</strong>" (which expression shall unless repugnant to the context or meaning thereof, include his/her heirs, executors, administrators, legal representatives and assigns) of the <strong>SECOND PART</strong>.</li>
+</ol>
+<p>(The Lessor and the Lessee hereinafter collectively referred to as "Parties" and individually as "Party").</p>
+<p><strong>WHEREAS:</strong></p>
+<p>a.  The Lessor is the absolute owner of the immovable property bearing [FLAT/HOUSE/SHOP NUMBER], [BUILDING NAME/HOUSE NAME], [STREET/AREA], [CITY], [PIN CODE], admeasuring approximately [AREA IN SQ. FT./SQ. M.], consisting of [NUMBER] bedrooms, [NUMBER] bathrooms, [OTHER ROOMS, e.g., kitchen, hall] (hereinafter referred to as the "Demised Premises").
+b.  The Lessee has approached the Lessor to take the Demised Premises on rent for residential/commercial purposes, and the Lessor has agreed to rent out the same to the Lessee on the terms and conditions hereinafter appearing.</p>
+<p><strong>NOW, THIS AGREEMENT WITNESSETH AS FOLLOWS:</strong></p>
+<ol>
+<li>
+<p><strong>TERM OF AGREEMENT:</strong>
+    This Agreement shall commence from [START DATE] and shall remain in force for a period of [DURATION, e.g., eleven (11) months, twelve (12) months] ending on [END DATE].</p>
+</li>
+<li>
+<p><strong>RENT:</strong>
+    The Lessee shall pay to the Lessor a monthly rent of <strong>Rs. [RENT AMOUNT]/- (Rupees [RENT AMOUNT IN WORDS] Only)</strong>, payable in advance on or before the [DUE DATE, e.g., 5th] day of each calendar month. The rent shall be paid via [MODE OF PAYMENT, e.g., bank transfer to Lessor's account, cheque, cash].</p>
+</li>
+<li>
+<p><strong>SECURITY DEPOSIT:</strong>
+    The Lessee shall pay to the Lessor a refundable security deposit of <strong>Rs. [SECURITY DEPOSIT AMOUNT]/- (Rupees [SECURITY DEPOSIT AMOUNT IN WORDS] Only)</strong>. This amount shall be paid by [MODE OF PAYMENT, e.g., cheque/bank transfer] on or before the execution of this Agreement. The Security Deposit shall be refunded by the Lessor to the Lessee within [NUMBER] days after the peaceful vacation of the Demised Premises by the Lessee, subject to deductions for any damages (other than normal wear and tear), unpaid utility bills, or outstanding rent. No interest shall be payable on the Security Deposit.</p>
+</li>
+<li>
+<p><strong>MAINTENANCE AND UTILITIES:</strong>
+    a.  The Lessee shall be responsible for paying all electricity, water, gas, internet, cable TV, and other utility charges pertaining to the Demised Premises directly to the concerned authorities as per actual consumption.
+    b.  [OPTIONAL: The Lessee shall also pay monthly maintenance charges of Rs. [MAINTENANCE CHARGE AMOUNT]/- (Rupees [MAINTENANCE CHARGE AMOUNT IN WORDS] Only) to the society/association/Lessor.]
+    c.  Minor repairs, such as replacement of bulbs, fuses, tap washers, minor plumbing issues, etc., shall be the responsibility of the Lessee. Structural repairs and major maintenance issues shall be the responsibility of the Lessor.</p>
+</li>
+<li>
+<p><strong>USE OF PREMISES:</strong>
+    The Demised Premises shall be used solely for [RESIDENTIAL/COMMERCIAL] purposes by the Lessee and his/her immediate family/employees. The Lessee shall not use the Demised Premises for any illegal, immoral, or hazardous activities.</p>
+</li>
+<li>
+<p><strong>SUBLETTING:</strong>
+    The Lessee shall not sublet, assign, or part with possession of the Demised Premises or any part thereof to any third party without the prior written consent of the Lessor.</p>
+</li>
+<li>
+<p><strong>TERMINATION AND NOTICE PERIOD:</strong>
+    Either Party may terminate this Agreement by giving a prior written notice of [NUMBER] month(s) to the other Party. Upon termination, the Lessee shall vacate the Demised Premises and hand over peaceful possession to the Lessor in the same condition as received, reasonable wear and tear excepted.</p>
+</li>
+<li>
+<p><strong>RIGHT OF ENTRY:</strong>
+    The Lessor shall have the right to enter the Demised Premises with prior notice to the Lessee for inspection or carrying out repairs, at a mutually convenient time.</p>
+</li>
+<li>
+<p><strong>STAMP DUTY AND REGISTRATION:</strong>
+    This Agreement shall be registered as per the provisions of the Registration Act, 1908, if required by law. The costs towards stamp duty and registration charges shall be borne by [WHO BEARS THE COST, e.g., Lessee, shared equally by Lessor and Lessee].</p>
+</li>
+<li>
+<p><strong>JURISDICTION:</strong>
+    Any dispute or difference arising between the Parties concerning this Agreement shall be subject to the exclusive jurisdiction of the Courts in [CITY, STATE].</p>
+</li>
+</ol>
+<p><strong>IN WITNESS WHEREOF</strong>, the Parties hereto have executed this Agreement on the day, month, and year first above written.</p>
+<p><strong>WITNESSES:</strong></p>
+<ol>
+<li>
+<p><strong>[NAME OF WITNESS 1]</strong>
+    Son/Daughter/Wife of [FATHER'S/HUSBAND'S NAME]
+    Address: [ADDRESS OF WITNESS 1]
+    Signature: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>____</p>
+</li>
+<li>
+<p><strong>[NAME OF WITNESS 2]</strong>
+    Son/Daughter/Wife of [FATHER'S/HUSBAND'S NAME]
+    Address: [ADDRESS OF WITNESS 2]
+    Signature: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>____</p>
+</li>
+</ol>
+<p><strong>LESSOR</strong>
+(Signature)
+[NAME OF LANDLORD]</p>
+<p><strong>LESSEE</strong>
+(Signature)
+[NAME OF TENANT]</p>
+<hr />
+<p><strong>Assumptions:</strong>
+*   The property is an immovable property intended for rental.
+*   The user will provide all necessary details for the placeholders.
+*   The purpose of the rental is either residential or commercial, to be specified by the user.
+*   The duration of the agreement is for a fixed term.
+*   The parties are individuals.</p>
