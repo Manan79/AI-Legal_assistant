@@ -139,7 +139,7 @@ def retriever_store(query ):
 @tool("wikipedia_search")
 def wikipedia_search(query):
     """Use this tool to get a summary of information from Wikipedia if you didn't get enough information."""
-    print("-"*8, "Invoking Wikipedia Search" , "-"*8)
+    print("-"*9, "Invoking Wikipedia Search" , "-"*9)
     print("Wikipedia Search Tool Called with query:", query)
     wiki = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper(doc_content_chars_max=1000, top_k_results=1))
     return wiki.invoke(query)
@@ -149,7 +149,7 @@ def wikipedia_search(query):
 def websearch(query):
 
     """Use this tool to search the web for the latest information on a topic."""
-    print("-"*8, "Invoking Websearch" , "-"*8)
+    print("-"*9, "Invoking Websearch" , "-"*9)
     print("Web Search Tool Called with query:", query)
     tool = TavilySearch(
         max_results=5,
