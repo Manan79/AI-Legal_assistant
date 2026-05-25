@@ -77,18 +77,12 @@ class HealthResponse(BaseModel):
 # API Endpoints
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-@app.get("/", tags=["Root"])
+
+from fastapi.responses import RedirectResponse
+
+@app.get("/")
 async def root():
-    """Root endpoint"""
-    return {
-        "name": "AI Legal Assistant API",
-        "version": "1.0.0",
-        "endpoints": {
-            "POST /query": "Process legal query",
-            "GET /health": "Health check",
-            "GET /docs": "API documentation"
-        }
-    }
+    return RedirectResponse(url="/app")
 
 
 @app.get("/health", response_model=HealthResponse, tags=["Health"])
