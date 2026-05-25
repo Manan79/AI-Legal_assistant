@@ -4,7 +4,7 @@ A FastAPI backend for an AI-powered Indian legal assistant built with LangGraph,
 
 ## Overview
 
-This project provides an API wrapper around a LangGraph workflow for legal reasoning, retrieval-augmented generation, and document drafting.
+This project provides an API wrapper around a LangGraph workflow for legal reasoning, retrieval-augmented generation, and document drafted.
 
 Key capabilities:
 - Process legal queries through a LangGraph workflow
