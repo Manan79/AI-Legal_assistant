@@ -4,15 +4,24 @@ from langchain_astradb import AstraDBVectorStore
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
+from functools import cache
 
 load_dotenv()
+os.environ["HF_HOME"]="./hf_cache"
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+@cache
+def load_embeddings():
+
+    return HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        cache_folder="./hf_cache"
     )
 
+embeddings=load_embeddings()
 
 model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+
+print("........ Establishing DB connection ........")
 
 vectorstore = AstraDBVectorStore(
     embedding=embeddings,
@@ -23,9 +32,16 @@ vectorstore = AstraDBVectorStore(
     autodetect_collection=True,
 )
 
+print("------------- Connection Established ---------------")
+
 retriever = vectorstore.as_retriever(
-    search_type= "similarity_score_threshold",
-    search_kwargs={"k": 3 , "score_threshold": 0.35}
+    search_type="mmr",
+    search_kwargs={
+        "k":10,
+        "fetch_k":30,
+        "lambda_mult":0.7
+    }
 )
+
 
 # print("VectorStore Connected successfully" , vectorstore)

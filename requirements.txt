@@ -12,9 +12,12 @@ langchain-openai
 pydantic
 wikipedia
 langchain-huggingface
+markdown
 langchain-astradb
 sentence-transformers
 langchain-tavily
 
 Fastapi
 uvicorn
+langsmith 
+langchain-google-genai
