@@ -100,6 +100,6 @@ Example response:
 - Add additional tools or retrieval sources as needed.
 - Use `react_rag.ipynb` for experimentation and prototyping.
 
-## License
+## Licen
 
 This repository does not include a license file. Add a license if you plan to share or distribute the code.
