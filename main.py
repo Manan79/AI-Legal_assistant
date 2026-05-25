@@ -82,7 +82,7 @@ from fastapi.responses import RedirectResponse
 
 @app.get("/")
 async def root():
-    return RedirectResponse(url="/app")
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/health", response_model=HealthResponse, tags=["Health"])
