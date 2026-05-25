@@ -21,3 +21,8 @@ Fastapi
 uvicorn
 langsmith 
 langchain-google-genai
+
+Future Requirements:
+- AWS for deployment
+- Docker for containerization
+- Kubernetes for orchestration
