@@ -91,11 +91,16 @@ async def root():
     }
 
 
-from fastapi.responses import RedirectResponse
+@app.get("/health", response_model=HealthResponse, tags=["Health"])
+async def health_check():
+    """Health check endpoint"""
+    logger.info("Health check requested")
+    return HealthResponse(
+        status="healthy",
+        message="AI Legal Assistant API is running",
+        timestamp=datetime.now().isoformat()
+    )
 
-@app.get("/")
-async def root():
-    return RedirectResponse(url="/app")
 
 @app.post("/query", response_model=LegalQueryResponse, tags=["Legal Assistant"])
 async def process_query(request: LegalQueryRequest):
