@@ -11,7 +11,6 @@ os.environ["HF_HOME"]="./hf_cache"
 
 @cache
 def load_embeddings():
-
     return HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
         cache_folder="./hf_cache"
