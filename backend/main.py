@@ -102,32 +102,6 @@ async def health_check():
     )
 
 
-from fastapi.responses import StreamingResponse
-import json
-
-@app.post("/chat-stream")
-async def chat_stream(request: LegalQueryRequest):
-
-    async def generate():
-
-        workflow_input = {
-            "messages": [HumanMessage(content=request.query)],
-            "retriever_docs": [],
-            "tools_used": [],
-            "draft": "",
-            "draft_type": ""
-        }
-
-        async for event in new_workflow.astream_events(
-            workflow_input,
-            version="v2"
-        ):
-            yield json.dumps(event) + "\n"
-
-    return StreamingResponse(
-        generate(),
-        media_type="application/json"
-    )
 
 @app.post("/chat", tags=["Legal Assistant"])
 async def chat(request: LegalQueryRequest):
