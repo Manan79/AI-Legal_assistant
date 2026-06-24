@@ -13,7 +13,7 @@ from datetime import datetime
 
 
 # Import the compiled workflow
-from graph import new_workflow
+from backend.graph import new_workflow
 
 # Configure logging
 logging.basicConfig(
@@ -102,22 +102,14 @@ async def health_check():
     )
 
 
-@app.post("/query", response_model=LegalQueryResponse, tags=["Legal Assistant"])
-async def process_query(request: LegalQueryRequest):
-    """
-    Process a legal query through the LangGraph workflow
-    
-    The query is passed through the compiled workflow which includes:
-    - React Agent for legal analysis
-    - Vector store retrieval for case law
-    - Web search for recent information
-    - Wikipedia search for context
-    - Document drafting capabilities
-    """
-    try:
-        logger.info(f"Processing query: {request.query[:100]}...")
-        
-        # Invoke the workflow with the user query
+from fastapi.responses import StreamingResponse
+import json
+
+@app.post("/chat-stream")
+async def chat_stream(request: LegalQueryRequest):
+
+    async def generate():
+
         workflow_input = {
             "messages": [HumanMessage(content=request.query)],
             "retriever_docs": [],
@@ -125,32 +117,17 @@ async def process_query(request: LegalQueryRequest):
             "draft": "",
             "draft_type": ""
         }
-        
-        # Execute the workflow
-        result = new_workflow.invoke(workflow_input)
-        
-        # Extract the response
-        if result.get('messages'):
-            response_content = result['messages'][-1].content
-        else:
-            response_content = "No response generated"
-        
-        logger.info("Query processed successfully")
-        
-        return LegalQueryResponse(
-            status="success",
-            query=request.query,
-            response=response_content,
-            timestamp=datetime.now().isoformat()
-        )
-        
-    except Exception as e:
-        logger.error(f"Error processing query: {str(e)}", exc_info=True)
-        raise HTTPException(
-            status_code=500,
-            detail=f"Error processing query: {str(e)}"
-        )
 
+        async for event in new_workflow.astream_events(
+            workflow_input,
+            version="v2"
+        ):
+            yield json.dumps(event) + "\n"
+
+    return StreamingResponse(
+        generate(),
+        media_type="application/json"
+    )
 
 @app.post("/chat", tags=["Legal Assistant"])
 async def chat(request: LegalQueryRequest):

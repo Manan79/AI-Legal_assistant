@@ -1,10 +1,10 @@
-from db_connection import retriever, model
+from backend.db_connection import retriever, model
 from langchain.tools import tool
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_community.tools import WikipediaQueryRun
 from langchain_tavily import TavilySearch
 from langchain.agents import create_agent 
-from drafter import generate_draft
+from backend.drafter import generate_draft
 # from functionalities import tools
 
 LEGAL_SYSTEM_PROMPT = """
@@ -27,9 +27,6 @@ LEGAL_SYSTEM_PROMPT = """
     - Legal documentation
     - Case-law interpretation
 
-    - If the user asks anything outside the legal domain:
-    politely refuse and respond:
-    "I am specifically designed to assist with legal and judgment-related queries only."
 
     TOOL USAGE INSTRUCTIONS:
 
@@ -181,13 +178,13 @@ LEGAL_SYSTEM_PROMPT = """
 
 
 @tool("retriever_store")
-def retriever_store(query ):
+def retriever_store(query):
     """Use this tool to retrieve information (before 2025) about supreme court judgements from the vector store or law related sources."""
 
     print("Retriever Tool Called with query:", query)
 
     docs = retriever.invoke(query)
-    return "\n\n".join([doc.page_content for doc in docs])
+    return {'retriever_docs' : docs , 'tools_used': ['retriever_store']}
 
 @tool("wikipedia_search")
 def wikipedia_search(query):
@@ -195,7 +192,7 @@ def wikipedia_search(query):
     print("-"*9, "Invoking Wikipedia Search" , "-"*9)
     print("Wikipedia Search Tool Called with query:", query)
     wiki = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper(doc_content_chars_max=1000, top_k_results=1))
-    return wiki.invoke(query)
+    return {'retriever_docs' : wiki.invoke(query) , 'tools_used': ['wikipedia_search']}
 
 
 @tool("websearch")
@@ -209,7 +206,7 @@ def websearch(query):
         topic='general',
     )
     
-    return tool.invoke({'query': query})
+    return {'retriever_docs' : tool.invoke({'query': query}) , 'tools_used': ['websearch']}
 
 
 tools = [retriever_store, wikipedia_search , websearch , generate_draft]

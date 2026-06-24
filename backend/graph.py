@@ -1,8 +1,8 @@
 from langgraph.graph import StateGraph , START , END
-from base import LegalAgent
+from backend.base import LegalAgent
 from IPython.display import Markdown, display
-
-from functionalities import react_node
+from langchain.messages import HumanMessage
+from backend.functionalities import react_node
 from langsmith import traceable
 
 
@@ -14,7 +14,6 @@ def workflow():
     builder.add_edge(START, "React_agent_legal")
     builder.add_edge("React_agent_legal", END)
 
-
     workflow = builder.compile()
 
     return workflow
@@ -22,12 +21,5 @@ def workflow():
 
 new_workflow = workflow()
 
-# try:
-#     result = new_workflow.invoke({"messages": [HumanMessage(content="Can you generate a timeline for Arvind Kejriwal CBI case with little bit summary ?")]})
-#     # display(Markdown(f"### Answer\n\n{result['messages'][-1].content}"))
-#     print(result['messages'][-1].content)
-
-# except Exception as e:
-#     print(e)
 
 

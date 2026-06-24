@@ -1,4 +1,3 @@
-
 from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAI
 
@@ -7,6 +6,7 @@ from IPython.display import Markdown, display
 from langchain.tools import tool
 
 import markdown
+
 load_dotenv()
 model_draft = GoogleGenerativeAI(model = 'gemini-2.5-flash')
 

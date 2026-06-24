@@ -3,6 +3,7 @@ import os
 from langchain_astradb import AstraDBVectorStore
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_openai import ChatOpenAI
+from langchain.chat_models import init_chat_model
 from dotenv import load_dotenv
 from functools import cache
 
@@ -19,6 +20,7 @@ def load_embeddings():
 embeddings=load_embeddings()
 
 model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+
 
 print("........ Establishing DB connection ........")
 
