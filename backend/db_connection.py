@@ -10,6 +10,8 @@ from functools import cache
 load_dotenv()
 os.environ["HF_HOME"]="./hf_cache"
 
+print("Database connection")
+
 @cache
 def load_embeddings():
     return HuggingFaceEmbeddings(
