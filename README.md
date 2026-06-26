@@ -322,10 +322,17 @@ The `vectorstore/` folder currently contains notebook-based work rather than a f
 
 ## Screenshots
 
-<img width="1905" height="463" alt="Screenshot 2026-05-25 004103" src="https://github.com/user-attachments/assets/08cb33fd-30e2-4545-8886-7346e8378510" />
-<img width="1075" height="357" alt="Screenshot 2026-05-25 004232" src="https://github.com/user-attachments/assets/0123be41-cd4e-46eb-8619-b17b8c2e21f2" />
-<img width="1575" height="325" alt="Screenshot 2026-05-25 004331" src="https://github.com/user-attachments/assets/9dfe9403-796b-4c5e-ad84-c68e43023087" />
-<img width="628" height="441" alt="Screenshot 2026-05-25 004628" src="https://github.com/user-attachments/assets/9c071208-6a37-4c6f-9deb-865a45de2de1" />
+# Frontend Screenshot
+<img width="1905" height="663" alt="Screenshot 2026-05-25 004103" src="https://github.com/user-attachments/assets/08cb33fd-30e2-4545-8886-7346e8378510" />
+
+# Monitoring Screenshot
+<img width="1075" height="557" alt="Screenshot 2026-05-25 004232" src="https://github.com/user-attachments/assets/0123be41-cd4e-46eb-8619-b17b8c2e21f2" />
+
+# Backend Screenshot
+<img width="1575" height="525" alt="Screenshot 2026-05-25 004331" src="https://github.com/user-attachments/assets/9dfe9403-796b-4c5e-ad84-c68e43023087" />
+
+ # Results
+<img width="628" height="641" alt="Screenshot 2026-05-25 004628" src="https://github.com/user-attachments/assets/9c071208-6a37-4c6f-9deb-865a45de2de1" />
 
 
 ## License
