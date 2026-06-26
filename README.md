@@ -321,10 +321,10 @@ The `vectorstore/` folder currently contains notebook-based work rather than a f
 - Add frontend or chat UI if this is meant to be user-facing
 
 ## Screenshots
-<img width="628" height="641" alt="Screenshot 2026-05-25 004628" src="https://github.com/user-attachments/assets/b3a7a27a-fa70-485b-8288-1728f3f86133" />
+
+<img width="1205" height="863" alt="Screenshot 2026-05-25 004103" src="https://github.com/user-attachments/assets/08cb33fd-30e2-4545-8886-7346e8378510" />
 <img width="1075" height="657" alt="Screenshot 2026-05-25 004232" src="https://github.com/user-attachments/assets/0123be41-cd4e-46eb-8619-b17b8c2e21f2" />
 <img width="1575" height="525" alt="Screenshot 2026-05-25 004331" src="https://github.com/user-attachments/assets/9dfe9403-796b-4c5e-ad84-c68e43023087" />
-<img width="1905" height="863" alt="Screenshot 2026-05-25 004103" src="https://github.com/user-attachments/assets/08cb33fd-30e2-4545-8886-7346e8378510" />
 <img width="628" height="641" alt="Screenshot 2026-05-25 004628" src="https://github.com/user-attachments/assets/9c071208-6a37-4c6f-9deb-865a45de2de1" />
 
 
